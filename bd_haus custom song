@@ -1,0 +1,36 @@
+live_loop :one do
+  sample :bd_haus, amp: 20
+  sleep 0.5
+end
+
+live_loop :prince do
+  sample :loop_industrial, beat_stretch: 2
+  sleep 2
+end
+
+live_loop :two do
+  sample :ambi_drone, amp: 4
+  sleep 4
+end
+
+live_loop :three do
+  sample :ambi_glass_hum
+  sleep 8
+end
+
+live_loop :four do
+  sample :drum_bass_hard, beat_stretch: 2
+  sleep 10
+end
+
+live_loop :five do
+  sample :ambi_lunar_land, beat_stretch: 3
+  sleep 12
+end
+
+
+play :c2, sustain: 3
+play :e2, sustain: 4
+play :g2, sustain: 2
+play :b2, sustain: 2
+play :b3
