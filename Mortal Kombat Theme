@@ -1,0 +1,101 @@
+=begin
+
+Functions are great for when the pattern of notes (sleeps) and the actual notes are exactly the same.
+
+Parameterised functions are great for when the pattern of notes is the same but the actual notes are different.
+
+YOUR TASK: Use a parameterised function to optimize the code below.
+
+=end
+
+use_bpm 120
+use_synth :chiplead
+
+
+
+define :two_notes do |n1, n2|
+  play n1
+  play n2
+  sleep 0.5
+end
+
+
+
+# MEASURE 1 ---------------------------
+
+
+two_notes :a4, :a5
+
+two_notes :a4, :a5
+
+two_notes :c5, :c6
+
+two_notes :a4, :a5
+
+two_notes :d5, :d6
+
+two_notes :a4, :a5
+
+two_notes :e5, :e6
+
+two_notes :d5, :d6
+
+
+# MEASURE 2 ---------------------------
+
+
+two_notes :c5, :c6
+
+two_notes :c5, :c6
+
+two_notes :e5, :e6
+
+two_notes :c5, :c6
+
+two_notes :g5, :g6
+
+two_notes :c4, :c5
+
+two_notes :e5, :e6
+
+two_notes :c4, :c5
+
+
+# MEASURE 3 ---------------------------
+
+
+two_notes :g4, :g5
+
+two_notes :g4, :g4
+
+two_notes :b4, :b5
+
+two_notes :g4, :g5
+
+two_notes :c5, :c6
+
+two_notes :g4, :g5
+
+two_notes :d5, :d6
+
+two_notes :c5, :c6
+
+
+# MEASURE 4 ---------------------------
+
+
+two_notes :f4, :f5
+
+two_notes :f4, :f5
+
+two_notes :a4, :a5
+
+two_notes :f4, :f5
+
+two_notes :c5, :c6
+
+two_notes :f4, :f5
+
+two_notes :c5, :c6
+
+two_notes :b4, :b5
